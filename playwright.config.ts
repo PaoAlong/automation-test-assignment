@@ -4,11 +4,16 @@ dotenv.config();
 
 
 export default defineConfig({
+  reporter: 'html',
+  
   globalSetup: require.resolve('./global/login'),
   use: {
     baseURL: process.env.saucedemo_TEST,
     storageState: 'storageState.json',
     headless: false,
+    screenshot:'on', 
+    video: 'on',          
+    trace: 'on',
 
     viewport: null,
 
