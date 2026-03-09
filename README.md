@@ -11,6 +11,7 @@ The test covers the complete flow from login to placing an order.
 Install project dependencies:
 
 npm install
+npx playwright install
 
 ## Environment Variables
 
