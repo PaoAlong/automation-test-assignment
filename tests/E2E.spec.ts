@@ -5,7 +5,7 @@ dotenv.config();
 
 test('End-to-End Scenario: Place an Order Successfully', async ({ page }) => {
 
-  // 1. Login 
+  // 1. Login         
   await page.goto('https://www.saucedemo.com/');
   await page.fill('#user-name', process.env.USERNAME_TEST!)
   await page.fill('#password', process.env.PASSWORD_TEST!)
