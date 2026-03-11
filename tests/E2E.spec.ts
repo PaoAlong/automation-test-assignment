@@ -36,7 +36,7 @@ test('End-to-End Scenario: Place an Order Successfully', async ({ page }) => {
   await page.fill('#postal-code', '10110');
 
   await page.click('#continue');
-  await page.pause();
+  
   // Expected Result: checkout overview page
   await expect(page).toHaveURL(/checkout-step-two/);
 
