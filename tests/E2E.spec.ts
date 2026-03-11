@@ -58,3 +58,4 @@ test('End-to-End Scenario: Place an Order Successfully', async ({ page }) => {
   await expect(page).toHaveURL('https://www.saucedemo.com/');
 });
 
+erthtgrhrhrthrthrt
