@@ -36,6 +36,8 @@ test('End-to-End Scenario: Place an Order Successfully', async ({ page }) => {
   await page.fill('#postal-code', '10110');
 
   await page.click('#continue');
+  await page.pause();
+  
 
   // Expected Result: checkout overview page
   await expect(page).toHaveURL(/checkout-step-two/);
@@ -52,6 +54,7 @@ test('End-to-End Scenario: Place an Order Successfully', async ({ page }) => {
   // 7. Logout
   await page.click('#react-burger-menu-btn');
   await page.click('#logout_sidebar_link');
+  
 
   // Expected Result: returned to login page
   await expect(page).toHaveURL('https://www.saucedemo.com/');
