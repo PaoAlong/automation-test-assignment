@@ -52,6 +52,7 @@ test('End-to-End Scenario: Place an Order Successfully', async ({ page }) => {
   // 7. Logout
   await page.click('#react-burger-menu-btn');
   await page.click('#logout_sidebar_link');
+  await page.pause();
 
   // Expected Result: returned to login page
   await expect(page).toHaveURL('https://www.saucedemo.com/');
